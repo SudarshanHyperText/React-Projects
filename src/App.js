@@ -71,48 +71,34 @@ function App() {
           <p className="user-value"> {value} </p>
 
           <div className="values-list">
-            <button className="icon">
-              <FaUser
-                className="icon"
-                data-label="name"
-                onMouseOver={handleValue}
-              />{" "}
+            <button className="icon" data-label="name" onClick={handleValue}>
+              {" "}
+              <FaUser className="single-icon" />
             </button>
-            <button className="icon">
-              <FaEnvelopeOpen
-                className="icon"
-                data-label="email"
-                onMouseOver={handleValue}
-              />{" "}
+            <button className="icon" data-label="email" onClick={handleValue}>
+              {" "}
+              <FaEnvelopeOpen className="single-icon" />
             </button>
-            <button className="icon">
-              <FaCalendarTimes
-                className="icon"
-                data-label="age"
-                onMouseOver={handleValue}
-              />{" "}
+            <button className="icon" data-label="age" onClick={handleValue}>
+              {" "}
+              <FaCalendarTimes className="single-icon" />
             </button>
-            <button className="icon">
-              <FaMap
-                className="icon"
-                data-label="street"
-                onMouseOver={handleValue}
-              />{" "}
+            <button className="icon" data-label="street" onClick={handleValue}>
+              {" "}
+              <FaMap className="single-icon" />
             </button>
-            <button className="icon">
-              <FaPhone
-                className="icon"
-                data-label="phone"
-                onMouseOver={handleValue}
-              />{" "}
+            <button className="icon" data-label="phone" onClick={handleValue}>
+              {" "}
+              <FaPhone className="single-icon" />
             </button>
 
-            <button className="icon">
-              <FaLock
-                className="icon"
-                data-label="password"
-                onMouseOver={handleValue}
-              />{" "}
+            <button
+              className="icon"
+              data-label="password"
+              onClick={handleValue}
+            >
+              {" "}
+              <FaLock />
             </button>
           </div>
           <button type="button" className="btn" onClick={getPerson}>
